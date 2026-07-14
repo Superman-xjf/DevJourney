@@ -30,3 +30,4 @@ include(":feature:dashboard")
 
 include(":feature:tasks")
 include(":core:ui")
+include(":core:database")

@@ -2,6 +2,7 @@ package com.xjf.devjourney.core.data.di
 
 import com.xjf.devjourney.core.data.DevJourneyRepository
 import com.xjf.devjourney.core.data.FakeDevJourneyRepository
+import com.xjf.devjourney.core.data.OfflineDevJourneyRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -12,6 +13,6 @@ import dagger.hilt.components.SingletonComponent
 interface DataModule {
     @Binds
     fun bindsDevJourneyRepository(
-        repository: FakeDevJourneyRepository,
+        repository: OfflineDevJourneyRepository,
     ): DevJourneyRepository
 }
